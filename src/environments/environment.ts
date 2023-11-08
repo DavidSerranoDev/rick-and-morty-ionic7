@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  rickAMortyBaseUrl: 'https://rickandmortyapi.com/api/',
+  character: 'character/'
 };
 
 /*

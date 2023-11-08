@@ -1,0 +1,26 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios">
+
+  <div class="glass-content ion-padding">
+    <div class="ion-text-center ion-padding-top" *ngIf="character">
+
+      <ion-avatar>
+        <img [src]="character.image"/>
+      </ion-avatar>
+
+      <h1>{{character.name}}</h1>
+      <div>{{character.status == 'Alive' ? 'Vivo'  : 'Muerto'}}</div>
+
+
+    </div>
+
+  </div>
+  
+</ion-content>

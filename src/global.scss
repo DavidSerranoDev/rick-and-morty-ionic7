@@ -24,3 +24,37 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.glass-content {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.2px);
+    -webkit-backdrop-filter: blur(13.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ion-content {
+    --ion-background-color: url(/assets/img/dancing.gif);
+    color:white;
+}
+
+ion-card {
+    background: rgba(105, 105, 105, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color:rgb(255, 255, 255);
+}
+
+.logo{
+    width: 16%;
+}
+
+.logo-center{
+    
+    width: 40%;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
