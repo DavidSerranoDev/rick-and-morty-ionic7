@@ -10,12 +10,21 @@ ion-avatar {
 }
 
 ion-searchbar{
-    --background: rgba(7,7,7,0.2);
+    --background: rgba(238, 238, 238, 0.377);
     max-width: 350px;
-    color: white;
+    color: rgb(12, 12, 12);
 }
 
 ion-card:hover{
     cursor: pointer;
     --background: rgba(7,7,7,0.450);
+}
+.glass-content {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(53, 51, 51);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.2px);
+    -webkit-backdrop-filter: blur(13.2px);
+    border: 1px solid rgb(255, 255, 255);
 }

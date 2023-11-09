@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'los_simpson_app',
+  appId: 'com.rickandmortyinfo.app',
+  appName: 'rickAndMortyInfo',
   webDir: 'www',
   server: {
     androidScheme: 'https'

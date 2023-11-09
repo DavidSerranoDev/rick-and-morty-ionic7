@@ -24,7 +24,6 @@ export class HomePage implements OnInit {
     this.rickAMortySvc.getCharacters(this.params).subscribe({
       next: (res: any) =>{
         this.characters.push(...res.results);
-        console.log(this.characters);
 
         if(event) event.target.complete();
       },

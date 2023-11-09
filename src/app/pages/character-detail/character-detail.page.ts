@@ -10,6 +10,8 @@ import { RickAndMortyService } from 'src/app/services/rick-and-morty.service';
 export class CharacterDetailPage implements OnInit {
   characterId: string = '';
   character = null as any;
+  episodes: any[] = [];
+  episodesCount: number = 0;
 
   constructor(
     private actRoute: ActivatedRoute,
@@ -31,12 +33,27 @@ export class CharacterDetailPage implements OnInit {
     this.rickAMortySvc.getCharacterById(this.characterId).subscribe({
       next: (res: any) =>{
         this.character = res;
-        console.log(res);
+        this.getEpisodes();
+        this.episodesCount = res.episode.length;
       },
       error: (error: any) => {
         
       }
     })
+  }
+
+  getEpisodes(){
+
+    for(let url of this.character.episode){
+      this.rickAMortySvc.getByUrl(url).subscribe({
+        next: (res: any) =>{
+          this.episodes.push(res);
+        },
+        error: (error: any) => {
+          
+        }
+      })
+    }
   }
 
 }
